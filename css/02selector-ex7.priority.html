@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /*
+        id: 100점
+        class: 10점
+        elem: 1점
+        */
+        h1 {
+            color: red;
+        }
+        .note.special {
+            color: blue;
+        }
+        h1.special {
+            color: pink;
+        }
+        .note {
+            color: yellow;
+        }
+        #header1 {
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <!-- 위에 점수 순위대로 적용됨 같은 점수일땐 아래 있는것이 적용됨-->
+    <!-- h1.special이나 .note.special 같은 경우 점수가 합산이 됨 -->
+    <!-- ex) h1=1점 special=10점 = 11점 -->
+    <!-- 마우스 커서를 올려 놓으면 점수를 볼 수 있음 -->
+    <h1 class="note">Lorem, ipsum dolor.</h1>
+    <h1 class="note special">Eum, atque ab.</h1>
+    <h1 id="header1" class="note special">Cupiditate, libero corrupti!</h1>
+    <h1>Modi, totam rerum!</h1>
+    <h1>Unde, aliquid fugit?</h1>
+</body>
+</html>
