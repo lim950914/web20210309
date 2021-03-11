@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* div h1 요소의 자식인 h1 요소 */
+        div>h1 {
+            color: red;
+        }
+        /* 클래스가 note 요소의 자식인 p 요소 */
+        .note>p {
+            text-decoration: underline;
+        }
+        .error>h1 {
+            background-color: yellow;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- >=자식 셀럭터 -->
+    <!-- div>h1>lorem3^p>lorem -->
+    <div class="note">
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui debitis cumque reiciendis placeat voluptatem, cum nobis provident voluptatibus quis deserunt adipisci ipsam asperiores explicabo iusto vitae molestias libero tempore?</p>
+    </div>
+
+    <!-- .error>h1>lorem3^p>lorem -->
+    <div class="error">
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus molestias consequuntur voluptates quos dolorem deleniti. Laboriosam rem numquam ducimus? Dignissimos rem, aliquam sunt ducimus necessitatibus quo praesentium fugiat at accusamus.</p>
+    </div>
+    <div class="error">
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, eum asperiores! Dolor animi sunt provident itaque maxime. Cumque natus laborum sapiente nisi, adipisci aut dicta explicabo aliquam quaerat libero illum!</p>
+    </div>
+
+    <h1>Lorem, ipsum dolor.</h1>
+</body>
+</html>
