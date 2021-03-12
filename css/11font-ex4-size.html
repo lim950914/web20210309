@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body, htnml {
+        font-size: 30px;
+    }
+    p {
+        font-size: 20px;
+    }
+    #percent {
+        font-size: 100%;
+    }
+    .em {
+        font-size: 0.75em;
+    }
+    .rem {
+        font-size: 0.75rem;
+    }
+</style>
+</head>
+<body>
+    <!-- percent=부모기준 즉 body의 100퍼 -->
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio possimus delectus fugiat voluptates fuga voluptate totam doloremque iusto asperiores! Ea corporis aspernatur delectus quia harum tenetur tempore, consequuntur recusandae ipsum!</p>
+<p id="percent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae vitae enim, illo debitis, inventore ex saepe eaque exercitationem voluptatibus, officia quo quod qui consequuntur eius nulla culpa veritatis maxime dolore.</p>
+<p class="em">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, eius saepe? Tempore quas, inventore molestias odit vero dolores, reprehenderit deleniti sint laudantium explicabo voluptate earum sapiente delectus, nemo ratione excepturi!</p>
+<!-- .em>p.em>lorem -->
+<div class="em">
+    <p class="em">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam delectus architecto provident doloribus quis dolorem eaque optio voluptatem, praesentium ad ipsum qui et dolor aperiam, eveniet, cum similique suscipit commodi.</p>
+</div>
+
+<!-- .rem>p.rem>lorem -->
+<!-- rem=루트 맨 바깥쪽 기준 즉 이화면 상 html 기준 -->
+<div class="rem">
+    <p class="rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, qui sapiente. Beatae nisi suscipit autem distinctio tempora ratione totam, delectus expedita facilis error, quia impedit veniam aperiam quos voluptates mollitia.</p>
+</div>
+</body>
+</html>
