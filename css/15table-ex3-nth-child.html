@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    p:nth-child(1)
+    {
+        background-color: blue;
+    }
+    p:nth-child(2)
+    {
+        background-color: gray;
+    }
+    p:nth-child(odd) /* odd 홀수 */
+    {
+        text-decoration: underline;
+    }
+    p:nth-child(even) /* even 짝수 */
+    {
+       font-weight: bold;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        height: 30px;
+    }
+    tr:nth-child(even) {
+        background-color: grey;
+    }
+</style>
+</head>
+<body>
+<div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum mollitia, architecto explicabo eius illum minus aperiam voluptatum adipisci temporibus natus facilis distinctio quam quo optio accusamus in maiores recusandae odio.</p>
+    <p>Beatae, excepturi distinctio! Alias, veniam ratione voluptatibus placeat quaerat adipisci repudiandae, laboriosam fuga tenetur, maxime nemo ullam harum. Beatae ea inventore explicabo mollitia reiciendis. Asperiores pariatur itaque ad non officia.</p>
+    <p>Consectetur illo ratione nobis repellat assumenda maxime velit sint deleniti quisquam, atque quas. Eius, aliquid corporis? Quia quod sapiente cumque distinctio inventore blanditiis voluptatum vel dolor, numquam possimus, minima recusandae.</p>
+    <p>Maxime harum aut nam molestias rem, suscipit nobis facilis maiores temporibus expedita corrupti omnis fugit ducimus impedit quidem ratione! Ea unde porro magni, quia voluptatibus modi ratione maiores quos eaque!</p>
+    <p>Ducimus animi itaque iste hic deserunt esse assumenda, tenetur explicabo. Ullam voluptatum, mollitia illo, consequuntur laborum quibusdam at in veniam excepturi eum tempora fuga id praesentium debitis fugiat ducimus voluptatem!</p>
+</div>
+
+<!-- table>tr>th*3>lorem1^^tr*4>td*3>lorem1 -->
+<table>
+    <tr>
+        <th>Lorem.</th>
+        <th>Doloribus!</th>
+        <th>Accusamus?</th>
+    </tr>
+    <tr>
+        <td>Lorem.</td>
+        <td>Eaque.</td>
+        <td>Est.</td>
+    </tr>
+    <tr>
+        <td>Lorem.</td>
+        <td>Labore.</td>
+        <td>Ullam.</td>
+    </tr>
+    <tr>
+        <td>Lorem.</td>
+        <td>Ducimus?</td>
+        <td>Iure.</td>
+    </tr>
+    <tr>
+        <td>Lorem.</td>
+        <td>Placeat!</td>
+        <td>Quas!</td>
+    </tr>
+</table>
+</body>
+</html>
