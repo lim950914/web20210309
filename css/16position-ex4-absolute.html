@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .wrapper {
+        position: relative;
+        width: 600px;
+        height: 500px;
+        border: 5px solid green;
+    }
+    .absolute-elem {
+        /*
+        조상 중에 포지션된 요소 기준,
+        없다면 루트 요소 기준
+        루트 요소란 최상위 요소 즉 html
+        *포지션된 요소란 static이 아닌 요소
+        */
+        position: absolute;
+        top: 5px;
+        width: 300px;
+        height: 200px;
+        border: 5px dotted blue;
+    }
+</style>
+</head>
+<body>
+<!-- .wrapper>.absolute-elem{absolute} -->
+<div class="wrapper">
+    <div class="absolute-elem">absolute</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dicta voluptatem aut nulla natus quo voluptas totam voluptate non quaerat officia dolore aliquam enim quae incidunt, rerum illo culpa autem!</p>
+</div>
+</body>
+</html>
