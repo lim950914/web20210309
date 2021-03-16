@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="all.min.js"></script>
+    <style>
+        .wrapper {
+            display: flex;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: gray;
+        }
+
+        .main {
+            color: white;
+            font-size: 25px;
+            padding: 10px;
+        }
+
+        .main:hover {
+            background-color: green;
+        }
+        span {
+            font-size: 37px;
+            color: green;
+        }
+
+        a:hover {
+            color: green;
+        }
+        .boo {
+            display: flex;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        .abc {
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .abcd {
+            color: white;
+            font-size: 20px;
+            background-color: rgb(19, 202, 50);
+            border-radius: 5px;
+            margin-left: 20px;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        a {
+            color: gray;
+            font-size: 37px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="boo">
+            <div class="ab"><a href="https://www.w3schools.com/">w3schools<span>.com</span></a></div>
+        </div>
+        <div class="boo">
+            <div class="abc">THE WORLD'S LARGEST WEB DEVELOPER SITE</div>
+            <div class="abcd">LOG IN</div>
+    </div>
+    </div>
+    <!-- .navbar>.wrapper>.main*6>lorem1^^.wrapper>.main*3>lorem1 -->
+    <div class="navbar">
+        <div class="wrapper">
+            <div class="main"><i class="fas fa-bars"></i></div>
+            <div class="main"><i class="fas fa-home"></i></div>
+            <div class="main">HTML</div>
+            <div class="main">CSS</div>
+            <div class="main">JAVASCRIPT</div>
+            <div class="main">MORE</div>
+        </div>
+        <div class="wrapper">
+            <div class="main"><i class="fas fa-adjust"></i></div>
+            <div class="main"><i class="fas fa-globe-africa"></i></div>
+            <div class="main"><i class="fas fa-search"></i></div>
+    </div>
+    </div>
+</body>
+
+</html>
