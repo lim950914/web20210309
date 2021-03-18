@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    </style>
+</head>
+
+<body>
+    <script>
+        // 함수 정의가 밑에 있어도 무관함 javascript 는 정의를 위로 끌어올림
+        // hoisting ok
+
+        myFunc();
+
+        function myFunc(params) {
+            console.log("abc");
+        }
+
+        // 변수에 함수를 할당 
+        // hoistng not ok
+
+        func2();
+
+        var func2 = function (params) {
+            console.log("no name");
+        }
+
+    </script>
+</body>
+
+</html>
