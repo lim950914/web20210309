@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="../css/all.min.js"></script>
+<style>
+</style>
+</head>
+<body>
+    <!-- input*2#input$ -->
+    <input type="text" id="input1">
+    <br>
+    <input type="text" id="input2">
+    <br>
+    <!-- button*4#button$>i.fas.fa-plus -->
+    <button onclick="add()" id="button1"><i class="fas fa-plus"></i></button>
+    <button onclick="minus()" id="button2"><i class="fas fa-minus"></i></button>
+    <button onclick="times()" id="button3"><i class="fas fa-times"></i></button>
+    <button onclick="divide()" id="button4"><i class="fas fa-divide"></i></button>
+    
+    <p id="result"></p>
+
+    <script>
+        // function 에 함수이름()를 정의하고 {} 로 묶어두면 바로 실행하지않음
+        // value 는 문자이기 때문에 더하기 연산이 연결 연산
+        // Number 를 적절히 사용하여 더하기 연산 완성
+  
+    function add(params) {
+       var a = document.getElementById("input1").value;
+       var b = document.getElementById("input2").value;
+       var c = Number(a);
+       var d = Number(b);
+       document.getElementById("result").innerHTML = c + d;
+    }
+
+    function minus(params) {
+       var a = document.getElementById("input1").value;
+       var b = document.getElementById("input2").value;
+       document.getElementById("result").innerHTML = a - b;
+    }
+
+    function times(params) {
+        var a = document.getElementById("input1").value;
+        var b = document.getElementById("input2").value;
+        document.getElementById("result").innerHTML = a * b;
+    }
+
+    function divide(params) {
+        var a = document.getElementById("input1").value;
+        var b = document.getElementById("input2").value;
+        document.getElementById("result").innerHTML = a / b;
+    }
+    </script>
+</body>
+</html>
