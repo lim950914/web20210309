@@ -23,7 +23,6 @@
         function toCelsius(fahrenheit) {
             return (5 / 9) * (fahrenheit - 32);
         }
-
         function process() {
             // input 아이디를 가진 element를 document에서 얻어서
             // value 속성을 읽어서 변수에 넣고
@@ -35,7 +34,35 @@
             document.getElementById("input2").value = celsius;
         }
     </script>
+    <br>
+    <br>
+    <hr>
+    <br>
+    섭씨 :
+    <input type="text" id="cat1">
+
+    <button onclick="pro()" id="button2">화씨로 변환</button>
+
+    <br>
+
+    화씨 :
+    <input type="text" readonly="readonly" id="cat2">
+
+    <script>
+
+        function abcd(hot) {
+
+            return ((9 / 5) * hot) + 32
+        }
+        function pro() {
+
+            var www = document.getElementById("cat1").value;
+
+            var cold = abcd(www);
+
+            document.getElementById("cat2").value = cold;
+        }
+    </script>
 
 </body>
-
 </html>

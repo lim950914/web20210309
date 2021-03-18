@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    섭씨 :
+    <input type="text" id="cat1">
+
+    <button onclick="pro()" id="button2">화씨로 변환</button>
+
+    <br>
+
+    화씨 :
+    <input type="text" readonly="readonly" id="cat2">
+
+    <script>
+
+        function abcd(hot) {
+
+            return ((9 / 5) * hot) + 32
+        }
+        function pro() {
+
+            var fah = document.getElementById("cat1").value;
+
+            var cold = abcd(fah);
+
+            document.getElementById("cat2").value = cold;
+        }
+    </script>
+
+</body>
+
+</html>
