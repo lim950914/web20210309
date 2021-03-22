@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <input type="text">
+
+    <button onclick="add()"><i class="fas fa-plus"></i></button>
+
+    <ul id="result"></ul>
+
+    <script>
+        function add() {
+            var text = document.querySelector("input").value;
+            text = text.trim();
+            var ul = document.getElementById("result");
+            // trim() 공백제거 띄어쓰기 제거
+            // 혹은 if (text)
+            if (text != "") {
+                ul.innerHTML += "<li>" + text + "</li>";
+            }
+        }
+    </script>
+</body>
+
+</html>
