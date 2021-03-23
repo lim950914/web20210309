@@ -16,13 +16,14 @@
 
     <h1 id="message"></h1>
 
+    <p id="lim"></p>
+
     <script>
         var computerNumber = Math.floor(Math.random() * 100) + 1;
         console.log(computerNumber);
         function check() {
             var userNumber = document.getElementById("input1").value;
             userNumber = Number(userNumber);
-
             //computerNumber와 userNumber 비교
             var txt = "";
             if (userNumber == computerNumber) {
