@@ -6,15 +6,16 @@
 </style>
 </head>
 <body>
-    <h1>구구단</h1>
-
     <div id="result"></div>
 
     <script>
         var txt = "";
         for (var i = 2; i <= 9; i++) {
-            for (var j = 1; j <= 9; j++) {
+
+            var j = 1;
+            while (j <= 9) {
                 txt += i + " X " + j + " = " + (i*j) + "<br>";
+                j++;
             }
         }
 
