@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("h1").click(function () {
+                var i = $(this).attr("id");
+                console.log(i);
+
+                var c = $(this).attr("class");
+                console.log(c);
+
+                var t = $(this).attr("title");
+                console.log(t);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1 id="head1" class="my-head" title="hello">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quaerat
+        in explicabo voluptatum id, commodi dignissimos recusandae amet deserunt quo ipsum optio hic placeat omnis
+        doloribus quia reprehenderit eius maxime?</h1>
+</body>
+
+</html>
